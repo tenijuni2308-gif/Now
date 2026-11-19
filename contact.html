@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Student Academic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">StudentPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Contact Me</h1>
+
+        <section class="card">
+            <h2>Direct Contact Information</h2>
+            <ul class="styled-list">
+                <li><strong>Full Name:</strong> TAIWO WUNDERKIND ENIJUNI</li>
+                <li><strong>Email Address:</strong> <a href="mailto:t.enijuni2308@miva.edu.ng">t.enijuni2308@miva.edu.ng</a></li>
+                <li><strong>Phone Number:</strong> <a href="tel:07065299826">07065299826</a></li>
+            </ul>
+        </section>
+
+        <section class="card form-container">
+            <h2>Send a Message</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="TAIWO WUNDERKIND ENIJUNI" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="t.enijuni2308@miva.edu.ng" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="07065299826" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <div id="formFeedback" class="feedback-msg"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TAIWO WUNDERKIND ENIJUNI - COS 106 Term Project</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
